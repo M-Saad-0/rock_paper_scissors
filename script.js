@@ -49,8 +49,8 @@ const runAndDeclareResults = () => {
 }
 
 const rounds = ()=>{
-    const t1 = document.querySelector(".comp > h3");
-    const t2 = document.querySelector(".player > h3");
+    const t2 = document.querySelector(".comp > h3");
+    const t1 = document.querySelector(".player > h3");
 
 
     if(resultRecords[0]>=5)
