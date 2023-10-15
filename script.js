@@ -55,18 +55,18 @@ const rounds = ()=>{
 
     if(resultRecords[0]>=5)
     {
-        t1.innerHTML = "Computer won!";
+        t1.innerHTML = "Player won!";
         t1.classList.add("winner");
         t2.classList.add("loser");
-        t2.innerHTML = "Player lost!";
+        t2.innerHTML = "Computer lost!";
 
 
         return 1;
     }
     else if(resultRecords[1]>=5)
     {
-        t2.innerHTML = "Player won!";
-        t1.innerHTML = "Computer lost!";
+        t2.innerHTML = "Computer won!";
+        t1.innerHTML = "Player lost!";
         t2.classList.add("winner");
         t1.classList.add("loser");
         return 1;
