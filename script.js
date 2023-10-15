@@ -49,16 +49,26 @@ const runAndDeclareResults = () => {
 }
 
 const rounds = ()=>{
+    const t1 = document.querySelector(".comp > h3");
+    const t2 = document.querySelector(".player > h3");
+
+
     if(resultRecords[0]>=5)
     {
-        const text = document.querySelector(".player > h3");
-        text.innerHTML = "Player won!";
+        t1.innerHTML = "Computer won!";
+        t1.classList.add("winner");
+        t2.classList.add("loser");
+        t2.innerHTML = "Player lost!";
+
+
         return 1;
     }
     else if(resultRecords[1]>=5)
     {
-        const text = document.querySelector(".comp > h3");
-        text.innerHTML = "Computer won!";
+        t2.innerHTML = "Player won!";
+        t1.innerHTML = "Computer lost!";
+        t2.classList.add("winner");
+        t1.classList.add("loser");
         return 1;
     }
     return 0;
@@ -91,8 +101,8 @@ const initGame = () => {
 }
 
 const b = document.querySelector(".button > button");
-if(b.classList[0] === ("tryagain"))
-    location.reload();
+    
+b.addEventListener("click",()=>location.reload());
 
 const playerDiv = document.querySelector(".imgs");
 

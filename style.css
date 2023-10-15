@@ -95,6 +95,7 @@ button{
 }
 
 .tryagain{
+    display: block;
     border: none;
     outline: none;
     padding: 14px 30px; 
@@ -135,4 +136,13 @@ footer img{
 
 ol{
     list-style-position: inside;
+}
+
+.winner{
+    font-size: 2rem;
+    color: #00ff37;
+}
+
+.loser{
+    color: #cc0000;
 }
