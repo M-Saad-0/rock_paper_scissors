@@ -5,7 +5,9 @@ let computerChoice = ""
 let wlClass = ["", ""]
 
 const winner = () => {
-    computerChoice = choices[Math.trunc(Math.random()*3)];
+    let randomNumber = Math.floor(Math.random()*3);
+    computerChoice = choices[randomNumber];
+    console.log(randomNumber);
     announceResult();
     return playerChoice === "rock" && computerChoice === "paper"? "c" 
             : playerChoice === "paper" && computerChoice === "scissors"? "c" 
